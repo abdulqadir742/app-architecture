@@ -1,6 +1,7 @@
 package com.example.app_architecture
 
 import android.app.Application
+import com.example.app_architecture.auth.AuthViewModel
 import com.example.core.iLocalDataSource.IAuthLocalDataSource
 import com.example.core.iNetworkDataSource.IAuthNetwork
 import com.example.core.iServices.IAuthService
@@ -20,5 +21,6 @@ class MainApplication : Application() {
         factory<IAuthLocalDataSource> { AuthLocalDataImpl() }
         factory<IAuthService> { AuthServiceImpl(get(), get()) }
         factory<IAuthNetwork> { AuthNetworkImpl() }
+        factory { AuthViewModel(get()) }
     }
 }

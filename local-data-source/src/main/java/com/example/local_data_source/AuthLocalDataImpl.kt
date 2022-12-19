@@ -5,7 +5,7 @@ import com.example.core.model.Authentication
 
 class AuthLocalDataImpl:IAuthLocalDataSource {
     override fun login(auth: Authentication): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
 }
