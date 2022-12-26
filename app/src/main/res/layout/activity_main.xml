@@ -32,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                    android:hint="Product Name"
+                    android:hint="@string/userName"
                     android:inputType="textNoSuggestions" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="100"
-                    android:hint="Email"
+                    android:hint="@string/userEmail"
                     android:inputType="text">
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="50"
-                    android:hint="Address"
+                    android:hint="@string/address"
                     android:inputType="text">
 
                 </com.google.android.material.textfield.TextInputEditText>
@@ -90,14 +90,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLength="12"
-                    android:hint="Phone"
+                    android:hint="@string/phone"
                     android:inputType="text">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
-
-
-
 
             <Button
                 android:id="@+id/btnInsert"
@@ -106,8 +103,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                android:text="SAVE"
-                android:textSize="16dp"
+                android:text="@string/save"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnWatch"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="@string/watch"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
 
